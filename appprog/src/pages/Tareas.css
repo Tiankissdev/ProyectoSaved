@@ -1,0 +1,131 @@
+/* Tareas.css */
+
+.tareas-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: 
+    var(--g1) calc(-1 * var(--s)) 0, var(--g1) calc(2 * var(--s)) var(--_p),
+    var(--g2), var(--g2) calc(3 * var(--s)) var(--_p),
+    var(--g3), var(--g3) calc(3 * var(--s)) var(--_p),
+    var(--g4), var(--g4) calc(3 * var(--s)) var(--_p),
+    var(--g5) calc(3 * var(--s)) 0, var(--g5) 0 var(--_p) var(--c3);
+  background-size: calc(6 * var(--s)) calc(2 * var(--_p));
+}
+
+.body-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: transparent;
+}
+
+.content {
+  background-color: #f8f9fa;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  padding: 20px; 
+  text-align: start; 
+  max-width: 1400px;
+  width: 100%;
+  margin: 20px auto 0; 
+}
+
+.title-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title {
+  margin-bottom: 20px;
+  color: #333;
+  text-align: center; 
+  flex: 1; 
+}
+
+.icon-container {
+  display: flex;
+  align-items: center;
+}
+.icon {
+  font-size: 28px; 
+  color: #000; 
+  align-items: center;
+}
+
+.button-container{
+  display: flex;
+  justify-content: center;
+}
+
+.task-cards {
+  display: flex;
+  flex-direction: column; 
+  align-items: flex-start; 
+  margin-top: 20px; 
+}
+
+.task-card {
+  width: 100%; 
+  border-radius: 8px;
+  margin-bottom: 5px;
+}
+
+.task-card:last-child {
+  margin-right: 0; 
+}
+
+.footer {
+  background-color: black;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro semitransparente */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  max-width: 80%;
+  width: 500px; /* Ancho del modal */
+  max-height: 80%;
+  overflow-y: auto; /* Habilitar scroll vertical si es necesario */
+}
+
+.modal-content h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.modal-content form {
+  width: 100%;
+}
+
+.modal-content form .mb-3 {
+  margin-bottom: 15px;
+}
+
+.modal-content form label {
+  font-weight: bold;
+}
+
+.modal-content form textarea {
+  resize: vertical; /* Permitir redimensionar verticalmente */
+}
+
+.modal-content form button {
+  margin-top: 15px;
+}
